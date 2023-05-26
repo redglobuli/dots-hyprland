@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-scripts/overview --row 2
+scripts/taskviewlayout
 
 if [ "$1" == "--once" ]; then
   exit 0
@@ -9,6 +9,6 @@ else
     # This sleep is necessary
     # It prevents the script from being faster than hyprctl
     sleep 0.025
-    scripts/overview --row 2
+    scripts/taskviewlayout
   done
 fi
