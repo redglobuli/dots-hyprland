@@ -36,7 +36,9 @@ _Click the images for video showcases with animations! (except illogical\_impuls
    <a href="https://github.com/end-4/dots-hyprland/tree/illogical-impulse">
     <img src="https://github.com/end-4/dots-hyprland/assets/97237370/66510836-9130-42f4-b4f9-929057b0a3ff" alt="illogical impulse">
    </a>
-
+   <a href="https://github.com/end-4/dots-hyprland/tree/illogical-impulse">
+    <img src="https://github.com/end-4/dots-hyprland/assets/97237370/d4c37041-9f3a-4a5f-a8c6-b1ac6edb808b" alt="illogical impulse">
+   </a>
 
 > [!WARNING]
 > Only the above is well maintained. Branches below currently do NOT work (see [#99](https://github.com/end-4/dots-hyprland/issues/99))
