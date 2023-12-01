@@ -42,7 +42,7 @@ _Click the images for video showcases with animations! (except illogical\_impuls
 
 > [!WARNING]
 > - Only the above is maintained
-> - Branches below:
+> - Stuff below:
 >   - Currently, they do NOT work (see [#99](https://github.com/end-4/dots-hyprland/issues/99))
 >   - The pics are here mainly for your viewing pleasure
 >   - The files are still available, feel free to grab them from [`archive`](https://github.com/end-4/dots-hyprland/tree/archive) branch if you're willing to see some spaghetti and troubleshoot
