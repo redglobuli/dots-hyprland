@@ -45,22 +45,22 @@ _Click the images for video showcases with animations! (except illogical\_impuls
 
 ### [m3ww](https://github.com/end-4/dots-hyprland/tree/m3ww)
    <a href="https://streamable.com/85ch8x">
-    <img src="./assets/m3ww_sideright2.png" alt="Material Eww!">
+    <img src="https://github.com/end-4/dots-hyprland/assets/97237370/09533e64-b6d7-47eb-a840-ee90c6776adf" alt="Material Eww!">
    </a>
 
 ### [NovelKnock](https://github.com/end-4/dots-hyprland/tree/novelknock)
    <a href="https://streamable.com/7vo61k">
-    <img src="./assets/novelknock-yellow.png" alt="Desktop Preview">
+    <img src="https://github.com/end-4/dots-hyprland/assets/97237370/42903d03-bf6f-49d4-be7f-dd77e6cb389d" alt="Desktop Preview">
    </a>
 
 ### [Hybrid](https://github.com/end-4/dots-hyprland/tree/hybrid)
    <a href="https://streamable.com/4oogot">
-    <img src="./assets/screenshot-hybrid.png" alt="click the circles!">
+    <img src="https://github.com/end-4/dots-hyprland/assets/97237370/190deb1e-f6f5-46ce-8cf0-9b39944c079d" alt="click the circles!">
    </a>
 
 ### [Windoes](https://github.com/end-4/dots-hyprland/tree/windoes)
    <a href="https://streamable.com/5qx614">
-    <img src="./assets/windoes-3.png" alt="Desktop Preview">
+    <img src="https://github.com/end-4/dots-hyprland/assets/97237370/b15317b1-f295-49f5-b90c-fb6328b8d886" alt="Desktop Preview">
    </a>
 
 - For older stuff I never wanna touch again, check the releases
