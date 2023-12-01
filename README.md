@@ -67,7 +67,7 @@ _Click the images for video showcases with animations! (except illogical\_impuls
     <img src="https://github.com/end-4/dots-hyprland/assets/97237370/b15317b1-f295-49f5-b90c-fb6328b8d886" alt="Desktop Preview">
    </a>
 
-- For older stuff I never wanna touch again, check the releases
+- For even older stuff I never wanna touch again, check the releases
 
 ---
 
