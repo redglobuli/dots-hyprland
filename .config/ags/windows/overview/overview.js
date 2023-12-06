@@ -4,7 +4,7 @@ import Applications from 'resource:///com/github/Aylur/ags/service/applications.
 import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
 const { execAsync, exec } = Utils;
 import { setupCursorHover, setupCursorHoverGrab } from "../../lib/cursorhover.js";
-import { execAndClose, startsWithNumber, launchCustomCommand, ls } from './miscfunctions.js';
+import { execAndClose, expandTilde, hasUnterminatedBackslash, startsWithNumber, launchCustomCommand, ls } from './miscfunctions.js';
 import {
     CalculationResultButton, CustomCommandButton, DirectoryButton,
     DesktopEntryButton, ExecuteCommandButton, SearchButton
@@ -30,7 +30,8 @@ const OVERVIEW_WS_NUM_SCALE = 0.09;
 const OVERVIEW_WS_NUM_MARGIN_SCALE = 0.07;
 const TARGET = [Gtk.TargetEntry.new('text/plain', Gtk.TargetFlags.SAME_APP, 0)];
 const searchPromptTexts = [
-    'Try "Kolourpaint"',
+    'Try "~/.config"',
+    'Try "Files"',
     'Try "6*cos(pi)"',
     'Try "sudo pacman -Syu"',
     'Try "How to basic"',
@@ -39,6 +40,11 @@ const searchPromptTexts = [
 ]
 
 const overviewTick = Variable(false);
+
+function iconExists(iconName) {
+    let iconTheme = Gtk.IconTheme.get_default();
+    return iconTheme.has_icon(iconName);
+}
 
 function substitute(str) {
     const subs = [
@@ -56,6 +62,7 @@ function substitute(str) {
             return to;
     }
 
+    if(!iconExists(str)) str = str.toLowerCase().replace(/\s+/g, '-'); // Turn into kebab-case
     return str;
 }
 
@@ -71,6 +78,7 @@ const ContextWorkspaceArray = ({ label, actionFunc, thisWorkspace }) => Widget.M
             button.connect("activate", () => {
                 // execAsync([`${onClickBinary}`, `${thisWorkspace}`, `${i}`]).catch(print);
                 actionFunc(thisWorkspace, i);
+                overviewTick.value = !overviewTick.value;
             });
             submenu.append(button);
         }
@@ -262,7 +270,7 @@ export const SearchAndWindows = () => {
         onMiddleClick: () => App.closeWindow('overview'),
     });
     const resultsBox = Widget.Box({
-        className: 'spacing-v-15 overview-search-results',
+        className: 'overview-search-results',
         vertical: true,
         vexpand: true,
     });
@@ -317,7 +325,7 @@ export const SearchAndWindows = () => {
     const entry = Widget.Entry({
         className: 'overview-search-box txt-small txt',
         hpack: 'center',
-        onAccept: ({ text }) => { // This is when you press Enter
+        onAccept: ({ text }) => { // This is when you hit Enter
             const isAction = text.startsWith('>');
             const isDir = (entry.text[0] == '/' || entry.text[0] == '~');
 
@@ -333,7 +341,9 @@ export const SearchAndWindows = () => {
                 }
             }
             if (isDir) {
-                execAsync(['bash', '-c', `xdg-open "${text}"`, `&`]).catch(print);
+                App.closeWindow('overview');
+                execAsync(['bash', '-c', `xdg-open "${expandTilde(text)}"`, `&`]).catch(print);
+                return;
             }
             if (_appSearchResults.length > 0) {
                 App.closeWindow('overview');
@@ -341,6 +351,7 @@ export const SearchAndWindows = () => {
                 return;
             }
             else if (text[0] == '>') { // Custom commands
+                App.closeWindow('overview');
                 launchCustomCommand(text);
                 return;
             }
@@ -409,7 +420,7 @@ export const SearchAndWindows = () => {
 
                     // Fallbacks
                     // if the first word is an actual command
-                    if (!isAction && exec(`bash -c "command -v ${text.split(' ')[0]}"`) != '') {
+                    if (!isAction && !hasUnterminatedBackslash(text) && exec(`bash -c "command -v ${text.split(' ')[0]}"`) != '') {
                         resultsBox.add(ExecuteCommandButton({ command: entry.text, terminal: entry.text.startsWith('sudo') }));
                     }
 

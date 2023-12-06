@@ -3,8 +3,13 @@ import { App, Service, Utils, Widget } from '../../imports.js';
 const { execAsync, exec } = Utils;
 import Todo from "../../services/todo.js";
 
+export function hasUnterminatedBackslash(inputString) {
+    // Use a regular expression to match a trailing odd number of backslashes
+    const regex = /\\+$/;
+    return regex.test(inputString);
+}
+
 export function launchCustomCommand(command) {
-    App.closeWindow('overview');
     const args = command.split(' ');
     if (args[0] == '>raw') { // Mouse raw input
         execAsync([`bash`, `-c`, `hyprctl keyword input:force_no_accel $(( 1 - $(hyprctl getoption input:force_no_accel -j | gojq ".int") ))`, `&`]).catch(print);
@@ -62,7 +67,7 @@ export function startsWithNumber(str) {
     return pattern.test(str);
 }
 
-function expandTilde(path) {
+export function expandTilde(path) {
     if (path.startsWith('~')) {
         return GLib.get_home_dir() + path.slice(1);
     } else {
