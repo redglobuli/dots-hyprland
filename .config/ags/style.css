@@ -38,13 +38,13 @@
   transition: 0ms; }
 
 .txt {
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .txt-primary {
-  color: #64dbb4; }
+  color: #d6baff; }
 
 .txt-onSecondaryContainer {
-  color: #cee9dc; }
+  color: #eadef7; }
 
 .txt-shadow {
   text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.69);
@@ -98,16 +98,19 @@
   font-size: 0.7273rem; }
 
 .txt-subtext {
-  color: #a2a5a2; }
+  color: #a8a3a8; }
 
 .txt-action {
-  color: #c2c4c1; }
+  color: #c7c2c7; }
 
 .txt-semibold {
   font-weight: 500; }
 
 .txt-bold {
   font-weight: bold; }
+
+.txt-italic {
+  font-style: italic; }
 
 .titlefont {
   font-family: 'Gabarito', 'Lexend', sans-serif; }
@@ -124,7 +127,7 @@
 .separator-circle {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  background-color: #e1e3e0;
+  background-color: #e7e1e6;
   margin: 0rem 0.682rem;
   min-width: 0.545rem;
   min-height: 0.545rem; }
@@ -321,20 +324,24 @@
 .instant {
   transition: 0ms; }
 
-.md3_decel {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1); }
+.menu_decel {
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1); }
 
 *:focus {
-  outline: 1px solid #191d1c; }
+  outline: 1px solid #1e1c20; }
+
+* selection {
+  background-color: #cec2db;
+  color: #342d40; }
 
 menu {
-  border-top: 1px solid rgba(54, 58, 57, 0.121);
-  border-left: 1px solid rgba(54, 58, 57, 0.121);
-  border-right: 1px solid rgba(40, 44, 43, 0.1105);
-  border-bottom: 1px solid rgba(40, 44, 43, 0.1105);
+  border-top: 1px solid rgba(59, 57, 61, 0.121);
+  border-left: 1px solid rgba(59, 57, 61, 0.121);
+  border-right: 1px solid rgba(45, 43, 47, 0.1105);
+  border-bottom: 1px solid rgba(45, 43, 47, 0.1105);
   padding: 0.681rem;
-  background: #232825;
-  color: #bfc9c3;
+  background: #28262b;
+  color: #cbc4cf;
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem; }
 
@@ -352,22 +359,22 @@ menu > menuitem {
   -gtk-outline-radius: 0.545rem; }
 
 menu > menuitem:hover {
-  background-color: #333835; }
+  background-color: #38363b; }
 
 .separator-line {
-  background-color: #232825;
+  background-color: #28262b;
   min-width: 0.068rem;
   min-height: 0.068rem; }
 
 tooltip {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  background-color: #232825;
-  color: #bfc9c3;
-  border: 1px solid #bfc9c3; }
+  background-color: #28262b;
+  color: #cbc4cf;
+  border: 1px solid #cbc4cf; }
 
 .bar-bg {
-  background-color: #0f1412;
+  background-color: #141316;
   min-height: 2.727rem; }
 
 .bar-sidespace {
@@ -377,7 +384,7 @@ tooltip {
   padding: 0.2rem; }
 
 .bar-group {
-  background-color: rgba(25, 29, 28, 0.31); }
+  background-color: rgba(30, 28, 32, 0.31); }
 
 .bar-group-center {
   border-bottom-left-radius: 1.364rem;
@@ -449,18 +456,18 @@ tooltip {
   -gtk-outline-radius: 9999px;
   min-width: 0.341rem;
   min-height: 0.341rem;
-  background-color: rgba(45, 49, 48, 0.31);
+  background-color: rgba(50, 48, 52, 0.31);
   margin: 0rem 0.341rem; }
 
 .bar-clock {
   font-family: 'Gabarito', 'Lexend', sans-serif;
   font-size: 1.2727rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .bar-date {
   font-family: 'Gabarito', 'Lexend', sans-serif;
   font-size: 1rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .bar-ws {
   min-height: 1.636rem;
@@ -480,8 +487,8 @@ tooltip {
   min-width: 1.5rem;
   font-size: 1.091rem;
   font-family: 'Geist', 'AR One Sans', 'Reddit Sans', 'Inter', 'Roboto', 'Noto Sans', 'Ubuntu', sans-serif;
-  background-color: #64dbb4;
-  color: #003829;
+  background-color: #d6baff;
+  color: #3d1c70;
   border-radius: 999px;
   margin: 0.068rem; }
 
@@ -493,52 +500,52 @@ tooltip {
   margin: 0rem 0.409rem; }
 
 .bar-ws-occupied {
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   min-width: 1.772rem;
-  border-top: 0.068rem solid #cee9dc;
-  border-bottom: 0.068rem solid #cee9dc; }
+  border-top: 0.068rem solid #eadef7;
+  border-bottom: 0.068rem solid #eadef7; }
 
 .bar-ws-occupied-left {
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   min-width: 1.704rem;
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;
-  border-left: 0.068rem solid #cee9dc;
-  border-top: 0.068rem solid #cee9dc;
-  border-bottom: 0.068rem solid #cee9dc;
+  border-left: 0.068rem solid #eadef7;
+  border-top: 0.068rem solid #eadef7;
+  border-bottom: 0.068rem solid #eadef7;
   border-right: 0px solid transparent; }
 
 .bar-ws-occupied-right {
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   min-width: 1.704rem;
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
-  border-right: 0.068rem solid #cee9dc;
-  border-top: 0.068rem solid #cee9dc;
-  border-bottom: 0.068rem solid #cee9dc;
+  border-right: 0.068rem solid #eadef7;
+  border-top: 0.068rem solid #eadef7;
+  border-bottom: 0.068rem solid #eadef7;
   border-left: 0px solid transparent; }
 
 .bar-ws-occupied-left-right {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   min-width: 1.636rem;
-  border: 0.068rem solid #cee9dc; }
+  border: 0.068rem solid #eadef7; }
 
 .bar-ws-empty {
-  color: #e1e3e0;
+  color: #e7e1e6;
   border-color: transparent; }
 
 .bar-batt {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   padding: 0rem 0.341rem;
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .bar-sidemodule {
   min-width: 26rem; }
@@ -563,23 +570,23 @@ tooltip {
   min-height: 1.770rem;
   min-width: 1.770rem;
   border-radius: 10rem;
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .bar-music-circprog {
   transition: 1000ms cubic-bezier(0.1, 1, 0, 1);
   min-width: 0.068rem;
   min-height: 1.770rem;
   padding: 0rem;
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .bar-music-playstate-playing {
   min-height: 1.770rem;
   min-width: 1.770rem;
   border-radius: 10rem;
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .bar-music-playstate-txt {
   transition: 100ms cubic-bezier(0.05, 0.7, 0.1, 1);
@@ -614,12 +621,12 @@ tooltip {
   border-radius: 10rem; }
 
 .bar-music-hide-false {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   transition-duration: 100ms;
   opacity: 1; }
 
 .bar-music-hide-true {
-  transition: 150ms cubic-bezier(0.3, 0, 0.8, 0.15);
+  transition: 160ms cubic-bezier(0.38, 0.04, 1, 0.07);
   transition-duration: 100ms;
   opacity: 0; }
 
@@ -646,7 +653,7 @@ tooltip {
     min-width: 0.680rem;
     margin: 0rem 0.137rem;
     border-radius: 10rem;
-    background-color: #cee9dc; }
+    background-color: #eadef7; }
 
 .bar-prog-batt-low progress {
   background-color: #930006; }
@@ -662,7 +669,7 @@ tooltip {
   border-radius: 10rem;
   min-width: 0.681rem;
   min-height: 0.681rem;
-  background-color: #cee9dc; }
+  background-color: #eadef7; }
 
 .bar-batt-chargestate-low {
   background-color: #930006; }
@@ -676,7 +683,7 @@ tooltip {
   font-weight: 500; }
 
 .corner {
-  background-color: #0f1412;
+  background-color: #141316;
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem; }
 
@@ -688,7 +695,7 @@ tooltip {
 .bar-topdesc {
   margin-top: -0.136rem;
   margin-bottom: -0.341rem;
-  color: #a2a5a2; }
+  color: #a8a3a8; }
 
 .bar-space-button {
   padding: 0.341rem; }
@@ -724,27 +731,27 @@ tooltip {
 .bar-statusicons {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   margin: 0.2rem;
   padding: 0rem 0.614rem; }
 
 .bar-statusicons-hover {
-  background-color: #242927; }
+  background-color: #29282b; }
 
 .bar-statusicons-active {
-  background-color: #393d3b; }
+  background-color: #3e3c40; }
 
 .cheatsheet-bg {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
   margin-bottom: 0.682rem;
-  background-color: #0f1412;
+  background-color: #141316;
   padding: 1.364rem; }
 
 .cheatsheet-key {
@@ -755,29 +762,29 @@ tooltip {
   padding: 0.136rem 0.205rem;
   border-radius: 0.409rem;
   -gtk-outline-radius: 0.409rem;
-  color: #64dbb4;
-  border: 0.068rem solid #64dbb4;
-  box-shadow: 0rem 0.136rem 0rem #64dbb4;
+  color: #d6baff;
+  border: 0.068rem solid #d6baff;
+  box-shadow: 0rem 0.136rem 0rem #d6baff;
   font-weight: 500; }
 
 .cheatsheet-key-notkey {
   min-height: 1.364rem;
   padding: 0.136rem 0.205rem;
   margin: 0.17rem;
-  color: #82f8d0; }
+  color: #ecdcff; }
 
 .cheatsheet-closebtn {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   min-width: 2.386rem;
   min-height: 2.386rem; }
 
 .cheatsheet-closebtn:hover {
-  background-color: #232825; }
+  background-color: #28262b; }
 
 .cheatsheet-closebtn:active {
-  background-color: #525854; }
+  background-color: #59555c; }
 
 .cheatsheet-category-title {
   font-family: 'Gabarito', 'Lexend', sans-serif;
@@ -792,12 +799,12 @@ tooltip {
 .bg-time-clock {
   font-family: 'Gabarito';
   font-size: 5.795rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .bg-time-date {
   font-family: 'Gabarito';
   font-size: 2.591rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .bg-distro-box {
   border-radius: 1.705rem;
@@ -808,12 +815,12 @@ tooltip {
 .bg-distro-txt {
   font-family: 'Gabarito';
   font-size: 1.432rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .bg-distro-name {
   font-family: 'Gabarito';
   font-size: 1.432rem;
-  color: #cee9dc; }
+  color: #eadef7; }
 
 .bg-graph {
   color: rgba(255, 255, 255, 0.5);
@@ -822,24 +829,24 @@ tooltip {
 
 .bg-quicklaunch-title {
   font-family: 'Geist', 'AR One Sans', 'Reddit Sans', 'Inter', 'Roboto', 'Noto Sans', 'Ubuntu', sans-serif;
-  color: #bfc9c3; }
+  color: #cbc4cf; }
 
 .bg-quicklaunch-btn {
   font-family: 'Geist', 'AR One Sans', 'Reddit Sans', 'Inter', 'Roboto', 'Noto Sans', 'Ubuntu', sans-serif;
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  background-color: #232825;
-  color: #bfc9c3;
-  border: 0.068rem solid #a2a5a2;
+  background-color: #28262b;
+  color: #cbc4cf;
+  border: 0.068rem solid #a8a3a8;
   min-width: 4.432rem;
   min-height: 2.045rem;
   padding: 0.273rem 0.682rem; }
 
 .bg-quicklaunch-btn:hover {
-  background-color: #2b302d; }
+  background-color: #302e33; }
 
 .bg-quicklaunch-btn:active {
-  background-color: #333835; }
+  background-color: #38363b; }
 
 .bg-system-bg {
   border-radius: 1.159rem;
@@ -851,14 +858,14 @@ tooltip {
   min-height: 4.091rem;
   font-size: 0px;
   padding: 0rem;
-  background-color: #232825; }
+  background-color: #28262b; }
 
 .dock-bg {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
-  background-color: #0f1412;
+  background-color: #141316;
   padding: 0.682rem; }
 
 .dock-app-btn {
@@ -867,10 +874,10 @@ tooltip {
   padding: 0.273rem; }
 
 .dock-app-btn:hover {
-  background-color: rgba(35, 39, 38, 0.31); }
+  background-color: rgba(40, 38, 42, 0.31); }
 
 .dock-app-btn:active {
-  background-color: rgba(55, 59, 57, 0.31); }
+  background-color: rgba(60, 58, 62, 0.31); }
 
 .dock-app-icon {
   min-width: 3.409rem;
@@ -878,14 +885,14 @@ tooltip {
 
 .dock-separator {
   min-width: 0.068rem;
-  background-color: #232825; }
+  background-color: #28262b; }
 
 .osd-bg {
   min-width: 8.864rem;
   min-height: 3.409rem; }
 
 .osd-value {
-  background-color: #0f1412;
+  background-color: #141316;
   border-radius: 1.023rem;
   padding: 0.625rem 1.023rem;
   padding-top: 0.313rem;
@@ -903,36 +910,36 @@ tooltip {
     min-height: 0.954rem;
     min-width: 0.068rem;
     border-radius: 10rem;
-    background-color: #344b42; }
+    background-color: #4b4358; }
   .osd-progress progress {
     transition: 200ms cubic-bezier(0.1, 1, 0, 1);
     min-height: 0.680rem;
     min-width: 0.680rem;
     margin: 0rem 0.137rem;
     border-radius: 10rem;
-    background-color: #cee9dc; }
+    background-color: #eadef7; }
 
 .osd-icon {
-  color: #82f8d0; }
+  color: #ecdcff; }
 
 .osd-label {
   font-size: 1.023rem;
   font-weight: 500;
-  color: #e1e3e0;
+  color: #e7e1e6;
   margin-top: 0.341rem; }
 
 .osd-value-txt {
   font-family: 'Gabarito', 'Lexend', sans-serif;
   font-size: 1.688rem;
   font-weight: 500;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .osd-notifs {
   padding-top: 0.313rem; }
 
 .osd-colorscheme {
   border-radius: 1.023rem;
-  background-color: #0f1412;
+  background-color: #141316;
   padding: 1.023rem;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px; }
@@ -950,74 +957,74 @@ tooltip {
     margin: 0.409rem; }
 
 .osd-color-primary {
-  background-color: #64dbb4;
-  color: #003829; }
+  background-color: #d6baff;
+  color: #3d1c70; }
   .osd-color-primary box {
-    background-color: #003829; }
+    background-color: #3d1c70; }
 
 .osd-color-primaryContainer {
-  background-color: #00513c;
-  color: #82f8d0; }
+  background-color: #543588;
+  color: #ecdcff; }
   .osd-color-primaryContainer box {
-    background-color: #82f8d0; }
+    background-color: #ecdcff; }
 
 .osd-color-secondary {
-  background-color: #b2ccc0;
-  color: #1e352c; }
+  background-color: #cec2db;
+  color: #342d40; }
   .osd-color-secondary box {
-    background-color: #1e352c; }
+    background-color: #342d40; }
 
 .osd-color-secondaryContainer {
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
   .osd-color-secondaryContainer box {
-    background-color: #cee9dc; }
+    background-color: #eadef7; }
 
 .osd-color-surfaceVariant {
-  background-color: #232825;
-  color: #bfc9c3; }
+  background-color: #28262b;
+  color: #cbc4cf; }
   .osd-color-surfaceVariant box {
-    background-color: #bfc9c3; }
+    background-color: #cbc4cf; }
 
 .osd-color-surface {
-  background-color: #191d1c;
-  color: #e1e3e0; }
+  background-color: #1e1c20;
+  color: #e7e1e6; }
   .osd-color-surface box {
-    background-color: #e1e3e0; }
+    background-color: #e7e1e6; }
 
 .osd-color-background {
-  background-color: #0f1412;
-  color: #e1e3e0; }
+  background-color: #141316;
+  color: #e7e1e6; }
   .osd-color-background box {
-    background-color: #e1e3e0; }
+    background-color: #e7e1e6; }
 
 .overview-search-box {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
   min-width: 13.636rem;
   min-height: 3.409rem;
   padding: 0rem 1.364rem;
   padding-right: 2.864rem;
-  background-color: #0f1412;
-  color: #e1e3e0;
+  background-color: #141316;
+  color: #e7e1e6;
   caret-color: transparent; }
   .overview-search-box selection {
-    background-color: #b2ccc0;
-    color: #1e352c; }
+    background-color: #cec2db;
+    color: #342d40; }
 
 .overview-search-box-extended {
   min-width: 25.909rem;
-  caret-color: #cee9dc; }
+  caret-color: #eadef7; }
 
 .overview-search-prompt {
-  color: #a2a5a2; }
+  color: #a8a3a8; }
 
 .overview-search-icon {
   margin: 0rem 1.023rem; }
@@ -1033,16 +1040,16 @@ tooltip {
 .overview-search-results {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
   min-width: 28.773rem;
   padding: 0.682rem;
-  background-color: #0f1412;
-  color: #e1e3e0; }
+  background-color: #141316;
+  color: #e7e1e6; }
 
 .overview-search-results-icon {
   margin: 0rem 0.682rem;
@@ -1076,45 +1083,45 @@ tooltip {
 .overview-tasks {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
   padding: 0.341rem;
-  background-color: #0f1412;
-  color: #e1e3e0; }
+  background-color: #141316;
+  color: #e7e1e6; }
 
 .overview-tasks-workspace {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   margin: 0.341rem;
-  background-color: rgba(46, 49, 48, 0.1147); }
+  background-color: rgba(51, 48, 52, 0.1147); }
 
 .overview-tasks-workspace-number {
   font-family: 'Geist', 'AR One Sans', 'Reddit Sans', 'Inter', 'Roboto', 'Noto Sans', 'Ubuntu', sans-serif;
-  color: rgba(211, 213, 210, 0.31); }
+  color: rgba(217, 211, 216, 0.31); }
 
 .overview-tasks-window {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
-  background-color: rgba(52, 75, 66, 0.5);
-  color: #cee9dc;
-  border: 0.068rem solid rgba(206, 233, 220, 0.07); }
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
+  background-color: rgba(75, 67, 88, 0.5);
+  color: #eadef7;
+  border: 0.068rem solid rgba(234, 222, 247, 0.07); }
 
 .overview-tasks-window:hover {
-  background-color: rgba(59, 95, 82, 0.525); }
+  background-color: rgba(94, 83, 111, 0.525); }
 
 .overview-tasks-window:focus {
-  background-color: rgba(59, 95, 82, 0.525); }
+  background-color: rgba(94, 83, 111, 0.525); }
 
 .overview-tasks-window:active {
-  background-color: rgba(64, 111, 95, 0.55); }
+  background-color: rgba(110, 97, 130, 0.55); }
 
 .overview-tasks-window-selected {
-  background-color: rgba(64, 111, 95, 0.55); }
+  background-color: rgba(110, 97, 130, 0.55); }
 
 .overview-tasks-window-dragging {
   opacity: 0.2; }
@@ -1122,30 +1129,30 @@ tooltip {
 .osk-window {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
-  background-color: #0f1412; }
+  background-color: #141316; }
 
 .osk-body {
   padding: 1.023rem;
   padding-top: 0px; }
 
 .osk-show {
-  transition: 170ms cubic-bezier(0.05, 0.7, 0.1, 1); }
+  transition: 170ms cubic-bezier(0.1, 1, 0, 1); }
 
 .osk-hide {
   margin-top: 30.682rem;
   margin-bottom: -30.682rem;
-  transition: 100ms cubic-bezier(0.3, 0, 0.8, 0.15); }
+  transition: 100ms cubic-bezier(0.38, 0.04, 1, 0.07); }
 
 .osk-dragline {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  background-color: #232825;
+  background-color: #28262b;
   min-height: 0.273rem;
   min-width: 10.227rem;
   margin-top: 0.545rem;
@@ -1153,21 +1160,21 @@ tooltip {
 
 .osk-key {
   border-radius: 0.682rem;
-  background-color: rgba(35, 40, 37, 0.31);
-  color: #bfc9c3;
+  background-color: rgba(40, 38, 43, 0.31);
+  color: #cbc4cf;
   padding: 0.188rem;
   font-weight: 500;
   font-size: 1.091rem; }
 
 .osk-key:hover {
-  background-color: rgba(51, 56, 53, 0.31); }
+  background-color: rgba(56, 54, 59, 0.31); }
 
 .osk-key:active {
-  background-color: rgba(82, 88, 84, 0.31);
+  background-color: rgba(89, 85, 92, 0.31);
   font-size: 1.091rem; }
 
 .osk-key-active {
-  background-color: rgba(82, 88, 84, 0.31); }
+  background-color: rgba(89, 85, 92, 0.31); }
 
 .osk-key-normal {
   min-width: 2.5rem;
@@ -1195,69 +1202,71 @@ tooltip {
 
 .osk-control-button {
   border-radius: 0.682rem;
-  background-color: rgba(35, 40, 37, 0.31);
-  color: #bfc9c3;
+  background-color: rgba(40, 38, 43, 0.31);
+  color: #cbc4cf;
   font-weight: 500;
   font-size: 1.091rem;
   padding: 0.682rem; }
 
 .osk-control-button:hover {
-  background-color: rgba(51, 56, 53, 0.31); }
+  background-color: rgba(56, 54, 59, 0.31); }
 
 .osk-control-button:active {
-  background-color: rgba(82, 88, 84, 0.31);
+  background-color: rgba(89, 85, 92, 0.31);
   font-size: 1.091rem; }
 
 .sidebar-right {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
-  background-color: #0f1412;
+  min-width: 27.818rem;
+  background-color: #141316;
   padding: 1.023rem; }
 
 .sideright-show {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1); }
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1); }
 
 .sideright-hide {
-  transition: 150ms cubic-bezier(0.3, 0, 0.8, 0.15);
+  transition: 160ms cubic-bezier(0.38, 0.04, 1, 0.07);
   margin-right: -30.682rem; }
 
 .sidebar-left {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
-  border-top: 1px solid rgba(161, 163, 161, 0.19);
-  border-left: 1px solid rgba(161, 163, 161, 0.19);
-  border-right: 1px solid rgba(125, 128, 126, 0.145);
-  border-bottom: 1px solid rgba(125, 128, 126, 0.145);
+  border-top: 1px solid rgba(166, 162, 166, 0.19);
+  border-left: 1px solid rgba(166, 162, 166, 0.19);
+  border-right: 1px solid rgba(131, 127, 131, 0.145);
+  border-bottom: 1px solid rgba(131, 127, 131, 0.145);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
-  background-color: #0f1412;
+  min-width: 27.818rem;
+  background-color: #141316;
   padding: 1.023rem; }
 
 .sideleft-show {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1); }
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1); }
 
 .sideleft-hide {
   margin-left: -30.682rem;
-  transition: 150ms cubic-bezier(0.3, 0, 0.8, 0.15); }
+  transition: 160ms cubic-bezier(0.38, 0.04, 1, 0.07); }
 
 .sidebar-group {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   padding: 0.341rem;
-  background-color: rgba(25, 29, 28, 0.31); }
+  background-color: rgba(30, 28, 32, 0.31); }
 
 .sidebar-group-nopad {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  background-color: rgba(25, 29, 28, 0.31); }
+  background-color: rgba(30, 28, 32, 0.31); }
 
 .sidebar-group-invisible {
   padding: 0.341rem; }
@@ -1268,39 +1277,39 @@ tooltip {
 .sidebar-iconbutton {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
-  color: #e1e3e0;
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
+  color: #e7e1e6;
   min-width: 2.727rem;
   min-height: 2.727rem; }
 
 .sidebar-iconbutton:hover {
-  background-color: #536b61; }
+  background-color: #6b6278; }
 
 .sidebar-iconbutton:active {
-  background-color: #728a80; }
+  background-color: #8b8198; }
 
 .sidebar-button {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   padding: 0rem 0.818rem;
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .sidebar-button-nopad {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
-  background-color: #344b42;
-  color: #cee9dc; }
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .sidebar-button:hover {
-  background-color: #536b61; }
+  background-color: #6b6278; }
 
 .sidebar-button:active {
-  background-color: #728a80; }
+  background-color: #8b8198; }
 
 .sidebar-button-nopad:hover {
-  background-color: #536b61; }
+  background-color: #6b6278; }
 
 .sidebar-button-nopad:active {
-  background-color: #728a80; }
+  background-color: #8b8198; }
 
 .sidebar-button-left {
   border-top-left-radius: 0.818rem;
@@ -1319,19 +1328,19 @@ tooltip {
   -gtk-outline-radius: 0.818rem; }
 
 .sidebar-button-active {
-  background-color: #64dbb4;
-  color: #003829; }
+  background-color: #d6baff;
+  color: #3d1c70; }
 
 .sidebar-button-active:hover {
-  background-color: rgba(101, 217, 179, 0.93); }
+  background-color: rgba(212, 185, 253, 0.93); }
 
 .sidebar-button-active:active {
-  background-color: rgba(102, 213, 176, 0.79); }
+  background-color: rgba(208, 182, 246, 0.79); }
 
 .sidebar-buttons-separator {
   min-width: 0.068rem;
   min-height: 0.068rem;
-  background-color: #bfc9c3; }
+  background-color: #cbc4cf; }
 
 .sidebar-navrail {
   padding: 0rem 1.159rem; }
@@ -1339,21 +1348,21 @@ tooltip {
 .sidebar-navrail-btn > box > label {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1); }
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1); }
 
 .sidebar-navrail-btn:hover > box > label:first-child {
-  background-color: rgba(94, 101, 97, 0.379); }
+  background-color: rgba(101, 98, 105, 0.379); }
 
 .sidebar-navrail-btn:active > box > label:first-child {
-  background-color: #4a504d; }
+  background-color: #514e54; }
 
 .sidebar-navrail-btn-active > box > label:first-child {
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .sidebar-navrail-btn-active:hover > box > label:first-child {
-  background-color: rgba(53, 76, 67, 0.93);
-  color: rgba(205, 231, 218, 0.93); }
+  background-color: rgba(76, 68, 89, 0.93);
+  color: rgba(232, 220, 245, 0.93); }
 
 .sidebar-sysinfo-grouppad {
   padding: 1.159rem; }
@@ -1363,8 +1372,8 @@ tooltip {
   min-width: 0.818rem;
   min-height: 4.091rem;
   padding: 0.409rem;
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   font-size: 0px; }
 
 .sidebar-memory-swap-circprog {
@@ -1373,16 +1382,16 @@ tooltip {
   min-height: 2.255rem;
   padding: 0.409rem;
   margin: 0.918rem;
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   font-size: 0px; }
 
 .sidebar-cpu-circprog {
   min-width: 0.818rem;
   min-height: 3.409rem;
   padding: 0.409rem;
-  background-color: #344b42;
-  color: #cee9dc;
+  background-color: #4b4358;
+  color: #eadef7;
   transition: 1000ms cubic-bezier(0.1, 1, 0, 1);
   font-size: 0px; }
 
@@ -1401,21 +1410,21 @@ tooltip {
   -gtk-outline-radius: 9999px;
   min-width: 0.273rem;
   min-height: 2.045rem;
-  background-color: rgba(191, 201, 195, 0.31); }
+  background-color: rgba(203, 196, 207, 0.31); }
 
 .sidebar-scrollbar slider:hover {
-  background-color: rgba(191, 201, 195, 0.448); }
+  background-color: rgba(203, 196, 207, 0.448); }
 
 .sidebar-scrollbar slider:active {
-  background-color: #717974; }
+  background-color: #7a757d; }
 
 .sidebar-calendar-btn {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   min-height: 2.523rem;
   min-width: 2.523rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .sidebar-calendar-btn:hover {
   background-color: rgba(128, 128, 128, 0.3); }
@@ -1428,17 +1437,17 @@ tooltip {
   margin-right: -10.341rem; }
 
 .sidebar-calendar-btn-today {
-  background-color: #64dbb4;
-  color: #003829; }
+  background-color: #d6baff;
+  color: #3d1c70; }
 
 .sidebar-calendar-btn-today:hover {
-  background-color: rgba(101, 217, 179, 0.93); }
+  background-color: rgba(212, 185, 253, 0.93); }
 
 .sidebar-calendar-btn-today:active {
-  background-color: rgba(102, 213, 176, 0.79); }
+  background-color: rgba(208, 182, 246, 0.79); }
 
 .sidebar-calendar-btn-othermonth {
-  color: #7d807e; }
+  color: #837f83; }
 
 .sidebar-calendar-header {
   margin: 0.341rem; }
@@ -1447,48 +1456,48 @@ tooltip {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   padding: 0rem 0.682rem;
-  background-color: rgba(35, 40, 37, 0.31);
-  color: #bfc9c3; }
+  background-color: rgba(40, 38, 43, 0.31);
+  color: #cbc4cf; }
 
 .sidebar-calendar-monthyear-btn:hover {
-  background-color: rgba(70, 76, 72, 0.3445);
-  color: #b7c1bb; }
+  background-color: rgba(76, 73, 80, 0.3445);
+  color: #c3bcc7; }
 
 .sidebar-calendar-monthyear-btn:active {
-  background-color: #3a403d;
-  color: #a8b1ab; }
+  background-color: #403e44;
+  color: #b3acb6; }
 
 .sidebar-calendar-monthshift-btn {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   min-width: 2.045rem;
   min-height: 2.045rem;
-  background-color: rgba(35, 40, 37, 0.31);
-  color: #bfc9c3; }
+  background-color: rgba(40, 38, 43, 0.31);
+  color: #cbc4cf; }
 
 .sidebar-calendar-monthshift-btn:hover {
-  background-color: rgba(70, 76, 72, 0.3445);
-  color: #b7c1bb; }
+  background-color: rgba(76, 73, 80, 0.3445);
+  color: #c3bcc7; }
 
 .sidebar-calendar-monthshift-btn:active {
-  background-color: #3a403d;
-  color: #a8b1ab; }
+  background-color: #403e44;
+  color: #b3acb6; }
 
 .sidebar-todo-selector-tab {
   border-radius: 0.818rem;
   -gtk-outline-radius: 0.818rem;
   transition: 0ms;
   min-height: 2.5rem;
-  color: #e1e3e0; }
+  color: #e7e1e6; }
 
 .sidebar-todo-selector-tab:hover {
-  background-color: rgba(94, 101, 97, 0.379); }
+  background-color: rgba(101, 98, 105, 0.379); }
 
 .sidebar-todo-selector-tab:active {
-  background-color: #4a504d; }
+  background-color: #514e54; }
 
 .sidebar-todo-selector-tab-active > box > label {
-  color: #64dbb4; }
+  color: #d6baff; }
 
 .sidebar-todo-selector-highlight-offset {
   margin-top: -0.205rem;
@@ -1496,7 +1505,7 @@ tooltip {
 
 .sidebar-todo-selector-highlight {
   transition: 180ms ease-in-out;
-  color: #64dbb4;
+  color: #d6baff;
   padding: 0rem 2.045rem;
   min-height: 0.205rem; }
 
@@ -1504,7 +1513,7 @@ tooltip {
   padding-right: 0.545rem; }
 
 .sidebar-todo-item-even {
-  background-color: rgba(35, 40, 37, 0.1); }
+  background-color: rgba(40, 38, 43, 0.1); }
 
 .sidebar-todo-item-action {
   border-radius: 9999px;
@@ -1512,17 +1521,17 @@ tooltip {
   min-height: 1.705rem; }
 
 .sidebar-todo-item-action:hover {
-  background-color: rgba(65, 69, 67, 0.31); }
+  background-color: rgba(70, 67, 72, 0.31); }
 
 .sidebar-todo-item-action:active {
-  background-color: rgba(95, 98, 97, 0.31); }
+  background-color: rgba(100, 97, 101, 0.31); }
 
 .sidebar-todo-crosser {
   transition: margin 200ms cubic-bezier(0.1, 1, 0, 1), background-color 0ms;
   min-width: 0rem; }
 
 .sidebar-todo-crosser-crossed {
-  background-color: #e1e3e0; }
+  background-color: #e7e1e6; }
 
 .sidebar-todo-crosser-removed {
   background-color: #ffb4a9; }
@@ -1531,110 +1540,147 @@ tooltip {
   border-radius: 0.818rem;
   min-height: 2.045rem;
   padding: 0.341rem;
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .sidebar-clipboard-item:hover {
-  background-color: #435b51; }
+  background-color: #5b5368; }
 
 .sidebar-clipboard-item:active {
-  background-color: #536b61; }
+  background-color: #6b6278; }
 
 .sidebar-todo-new {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  color: #cee9dc;
+  color: #eadef7;
   margin: 0.341rem;
   padding: 0.205rem 0.545rem;
-  border: 0.068rem solid #e1e3e0; }
+  border: 0.068rem solid #e7e1e6; }
 
 .sidebar-todo-new:hover {
-  background-color: #395047; }
+  background-color: #50485d; }
 
 .sidebar-todo-new:active {
-  background-color: #536b61; }
+  background-color: #6b6278; }
 
 .sidebar-todo-add {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   min-width: 1.705rem;
   min-height: 1.705rem;
-  color: #cee9dc;
-  border: 0.068rem solid #e1e3e0; }
+  color: #eadef7;
+  border: 0.068rem solid #e7e1e6; }
 
 .sidebar-todo-add:hover {
-  background-color: #395047; }
+  background-color: #50485d; }
 
 .sidebar-todo-add:active {
-  background-color: #536b61; }
+  background-color: #6b6278; }
 
 .sidebar-todo-add-available {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   min-width: 1.705rem;
   min-height: 1.705rem;
-  background-color: #64dbb4;
-  color: #003829;
-  border: 0.068rem solid #64dbb4; }
+  background-color: #d6baff;
+  color: #3d1c70;
+  border: 0.068rem solid #d6baff; }
 
 .sidebar-todo-add-available:hover {
-  background-color: #61d6b0; }
+  background-color: #d1b5fb; }
 
 .sidebar-todo-add-available:active {
-  background-color: #50ba98; }
+  background-color: #b79ae2; }
 
 .sidebar-todo-entry {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 0.818rem;
   -gtk-outline-radius: 0.818rem;
-  background-color: #232825;
-  color: #bfc9c3;
-  caret-color: #bfc9c3;
+  background-color: #28262b;
+  color: #cbc4cf;
+  caret-color: #cbc4cf;
   margin: 0rem 0.341rem;
   min-height: 1.773rem;
   min-width: 0rem;
   padding: 0.205rem 0.682rem;
-  border: 0.068rem solid #717974; }
+  border: 0.068rem solid #7a757d; }
 
 .sidebar-todo-entry:focus {
-  border: 0.068rem solid #afb9b3; }
+  border: 0.068rem solid #bbb4bf; }
 
 .sidebar-module {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   padding: 0.341rem;
-  background-color: rgba(25, 29, 28, 0.31); }
+  background-color: rgba(30, 28, 32, 0.31); }
 
 .sidebar-module-btn-arrow {
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Symbols Sharp';
-  background-color: rgba(35, 40, 37, 0.31);
+  background-color: rgba(40, 38, 43, 0.31);
   min-width: 1.705rem;
   min-height: 1.705rem; }
 
+.sidebar-chat-viewport {
+  margin: 0.682rem; }
+
+.sidebar-chat-textarea {
+  border-radius: 1.159rem;
+  -gtk-outline-radius: 1.159rem;
+  border: 0.068rem solid #7a757d;
+  padding: 0.682rem; }
+
+.sidebar-chat-entry {
+  caret-color: #cbc4cf;
+  min-height: 1.773rem;
+  min-width: 0rem; }
+
+.sidebar-chat-send {
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
+  min-width: 1.705rem;
+  min-height: 1.705rem;
+  border-radius: 0.478rem;
+  background-color: #7a757d; }
+
+.sidebar-chat-send:hover {
+  background-color: #7d7881; }
+
+.sidebar-chat-send:active {
+  background-color: #908a95; }
+
+.sidebar-chat-send-available {
+  background-color: #d6baff;
+  color: #3d1c70; }
+
+.sidebar-chat-send-available:hover {
+  background-color: #d1b5fb; }
+
+.sidebar-chat-send-available:active {
+  background-color: #b79ae2; }
+
 .session-bg {
   margin-top: -2.727rem;
-  background-color: rgba(15, 20, 18, 0.64); }
+  background-color: rgba(20, 19, 22, 0.64); }
 
 .session-button {
   border-radius: 1.705rem;
   -gtk-outline-radius: 1.705rem;
   min-width: 8.182rem;
   min-height: 8.182rem;
-  background-color: #232825;
-  color: #bfc9c3;
+  background-color: #28262b;
+  color: #cbc4cf;
   font-size: 3rem; }
 
 .session-button-focused {
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .session-button-desc {
-  background-color: #1e2321;
-  color: #d0d6d2;
+  background-color: #232126;
+  color: #d9d3db;
   border-bottom-left-radius: 1.705rem;
   border-bottom-right-radius: 1.705rem;
   padding: 0.205rem 0.341rem;
@@ -1645,23 +1691,23 @@ tooltip {
   -gtk-outline-radius: 1.705rem;
   min-width: 8.182rem;
   min-height: 5.455rem;
-  background-color: #232825;
-  color: #bfc9c3;
+  background-color: #28262b;
+  color: #cbc4cf;
   font-size: 3rem; }
 
 .notif-low {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  background-color: rgba(35, 40, 37, 0.45);
-  color: #bfc9c3;
+  background-color: rgba(40, 38, 43, 0.45);
+  color: #cbc4cf;
   padding: 0.818rem;
   padding-right: 1.363rem; }
 
 .notif-normal {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  background-color: rgba(35, 40, 37, 0.45);
-  color: #bfc9c3;
+  background-color: rgba(40, 38, 43, 0.45);
+  color: #cbc4cf;
   padding: 0.818rem;
   padding-right: 1.363rem; }
 
@@ -1677,8 +1723,8 @@ tooltip {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   min-width: 30.682rem;
-  background-color: #0f1412;
-  color: #bfc9c3;
+  background-color: #141316;
+  color: #cbc4cf;
   padding: 0.818rem;
   padding-right: 1.363rem; }
 
@@ -1686,8 +1732,8 @@ tooltip {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   min-width: 30.682rem;
-  background-color: #0f1412;
-  color: #bfc9c3;
+  background-color: #141316;
+  color: #cbc4cf;
   padding: 0.818rem;
   padding-right: 1.363rem; }
 
@@ -1701,10 +1747,10 @@ tooltip {
   padding-right: 1.363rem; }
 
 .notif-body-low {
-  color: #8c948f; }
+  color: #959099; }
 
 .notif-body-normal {
-  color: #8c948f; }
+  color: #959099; }
 
 .notif-body-critical {
   color: #9a3b3a; }
@@ -1716,16 +1762,16 @@ tooltip {
   min-height: 3.409rem; }
 
 .notif-icon-material {
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .notif-icon-material-low {
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .notif-icon-material-normal {
-  background-color: #344b42;
-  color: #cee9dc; }
+  background-color: #4b4358;
+  color: #eadef7; }
 
 .notif-icon-material-critical {
   background-color: #930006;
@@ -1756,7 +1802,7 @@ tooltip {
 .osd-notif {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
-  background-color: rgba(15, 20, 18, 0.38);
+  background-color: rgba(20, 19, 22, 0.38);
   min-width: 30.682rem; }
 
 .notif-circprog-low {
@@ -1764,14 +1810,14 @@ tooltip {
   min-width: 0.136rem;
   min-height: 1.770rem;
   padding: 0rem;
-  color: #cee9dc; }
+  color: #eadef7; }
 
 .notif-circprog-normal {
   transition: 0ms linear;
   min-width: 0.136rem;
   min-height: 1.770rem;
   padding: 0rem;
-  color: #cee9dc; }
+  color: #eadef7; }
 
 .notif-circprog-critical {
   transition: 0ms linear;
@@ -1781,30 +1827,30 @@ tooltip {
   color: #680003; }
 
 .osd-music {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.45);
   margin: 7px;
   margin-top: 0.313rem;
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   min-width: 29.659rem;
-  background-color: #090a0e;
+  background-color: #141316;
   padding: 0rem 1.023rem;
-  background: linear-gradient(127deg, rgba(95, 25, 38, 0.7), rgba(95, 25, 38, 0.55) 70.71%), linear-gradient(217deg, rgba(236, 95, 97, 0.7), rgba(236, 95, 97, 0.55) 70.71%), radial-gradient(circle at 0% 100%, #D6897A 13%, rgba(0, 0, 0, 0) 100%), linear-gradient(336deg, rgba(18, 104, 212, 0.7), rgba(18, 104, 212, 0.55) 70.71%), linear-gradient(#090a0e, #090a0e); }
+  background: linear-gradient(127deg, rgba(41, 39, 44, 0.7), rgba(41, 39, 44, 0.55) 70.71%), linear-gradient(217deg, rgba(73, 69, 78, 0.7), rgba(73, 69, 78, 0.55) 70.71%), radial-gradient(circle at 0% 100%, #4b4358 13%, rgba(0, 0, 0, 0) 100%), linear-gradient(336deg, rgba(75, 67, 88, 0.7), rgba(75, 67, 88, 0.55) 70.71%), linear-gradient(#141316, #141316); }
 
 .osd-music-cover-fallback {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 0.818rem;
   -gtk-outline-radius: 0.818rem;
   min-width: 7.5rem;
   min-height: 7.5rem;
-  background-color: rgba(25, 29, 28, 0.31);
-  color: #89b2df; }
+  background-color: rgba(30, 28, 32, 0.31);
+  color: #d7d1d7; }
 
 .osd-music-cover {
   border-radius: 0.818rem;
   -gtk-outline-radius: 0.818rem;
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   margin-top: 1.023rem;
   margin-bottom: 1.023rem;
   min-width: 7.5rem;
@@ -1822,52 +1868,52 @@ tooltip {
   margin: 1.023rem 0rem; }
 
 .osd-music-title {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   font-family: 'Gabarito', 'Lexend', sans-serif;
   font-size: 1.364rem;
-  color: #89b2df; }
+  color: #d7d1d7; }
 
 .osd-music-artists {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   font-family: 'Geist', 'AR One Sans', 'Reddit Sans', 'Inter', 'Roboto', 'Noto Sans', 'Ubuntu', sans-serif;
   font-size: 0.955rem;
-  color: rgba(134, 170, 212, 0.9); }
+  color: rgba(203, 197, 203, 0.9); }
 
 .osd-music-pill {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   font-family: 'Gabarito', 'Lexend', sans-serif;
   min-width: 1.833rem;
   padding: 0.273rem 0.682rem;
-  background-color: rgba(100, 69, 74, 0.5);
-  color: #89b2df; }
+  background-color: rgba(53, 49, 58, 0.5);
+  color: #d7d1d7; }
 
 .osd-music-controls {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   border-radius: 9999px;
   -gtk-outline-radius: 9999px;
   font-family: 'Gabarito', 'Lexend', sans-serif;
   min-width: 1.833rem;
   padding: 0.205rem;
-  background-color: rgba(100, 69, 74, 0.5);
-  color: #89b2df; }
+  background-color: rgba(53, 49, 58, 0.5);
+  color: #d7d1d7; }
 
 .osd-music-controlbtn {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   min-width: 2.045rem;
   min-height: 2.045rem;
   border-radius: 9999px;
   -gtk-outline-radius: 9999px; }
 
 .osd-music-controlbtn:hover {
-  background-color: rgba(109, 96, 111, 0.55); }
+  background-color: rgba(94, 89, 97, 0.55); }
 
 .osd-music-controlbtn:active {
-  background-color: rgba(113, 107, 126, 0.575); }
+  background-color: rgba(109, 104, 112, 0.575); }
 
 .osd-music-controlbtn-txt {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   transition: 100ms cubic-bezier(0.05, 0.7, 0.1, 1);
   font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Symbols Sharp';
   font-size: 1.364rem;
@@ -1878,16 +1924,16 @@ tooltip {
   min-width: 0.409rem;
   min-height: 3.068rem;
   padding: 0.273rem;
-  background-color: rgba(100, 69, 74, 0.5);
-  color: #89b2df; }
+  background-color: rgba(53, 49, 58, 0.5);
+  color: #d7d1d7; }
 
 .osd-music-playstate {
-  transition: 200ms cubic-bezier(0.05, 0.7, 0.1, 1);
+  transition: 300ms cubic-bezier(0.1, 1, 0, 1);
   min-height: 3.068rem;
   min-width: 3.068rem;
   border-radius: 10rem;
-  background-color: rgba(100, 69, 74, 0.5);
-  color: #89b2df; }
+  background-color: rgba(53, 49, 58, 0.5);
+  color: #d7d1d7; }
 
 .osd-music-playstate-btn > label {
   transition: 50ms cubic-bezier(0.05, 0.7, 0.1, 1);

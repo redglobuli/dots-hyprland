@@ -4,6 +4,7 @@ import Applications from 'resource:///com/github/Aylur/ags/service/applications.
 import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
 const { execAsync, exec } = Utils;
 import { setupCursorHover, setupCursorHoverGrab } from "../../lib/cursorhover.js";
+import { DoubleRevealer } from "../../lib/doublerevealer.js";
 import { execAndClose, expandTilde, hasUnterminatedBackslash, startsWithNumber, launchCustomCommand, ls } from './miscfunctions.js';
 import {
     CalculationResultButton, CustomCommandButton, DirectoryButton,
@@ -41,6 +42,35 @@ const searchPromptTexts = [
 
 const overviewTick = Variable(false);
 
+function truncateTitle(str) {
+    let lastDash = -1;
+    let found = -1; // 0: em dash, 1: en dash, 2: minus, 3: vertical bar, 4: middle dot
+    for (let i = str.length - 1; i >= 0; i--) {
+        if (str[i] === '—') {
+            found = 0;
+            lastDash = i;
+        }
+        else if (str[i] === '–' && found < 1) {
+            found = 1;
+            lastDash = i;
+        }
+        else if (str[i] === '-' && found < 2) {
+            found = 2;
+            lastDash = i;
+        }
+        else if (str[i] === '|' && found < 3) {
+            found = 3;
+            lastDash = i;
+        }
+        else if (str[i] === '·' && found < 4) {
+            found = 4;
+            lastDash = i;
+        }
+    }
+    if (lastDash === -1) return str;
+    return str.substring(0, lastDash);
+}
+
 function iconExists(iconName) {
     let iconTheme = Gtk.IconTheme.get_default();
     return iconTheme.has_icon(iconName);
@@ -62,7 +92,7 @@ function substitute(str) {
             return to;
     }
 
-    if(!iconExists(str)) str = str.toLowerCase().replace(/\s+/g, '-'); // Turn into kebab-case
+    if (!iconExists(str)) str = str.toLowerCase().replace(/\s+/g, '-'); // Turn into kebab-case
     return str;
 }
 
@@ -87,8 +117,10 @@ const ContextWorkspaceArray = ({ label, actionFunc, thisWorkspace }) => Widget.M
     }
 })
 
-const client = ({ address, size: [w, h], workspace: { id, name }, class: c, title }) => {
+const client = ({ address, size: [w, h], workspace: { id, name }, class: c, title, xwayland }) => {
+    const revealInfoCondition = (Math.min(w, h) * OVERVIEW_SCALE > 70);
     if (w <= 0 || h <= 0) return null;
+    title = truncateTitle(title);
     return Widget.Button({
         className: 'overview-tasks-window',
         hpack: 'center',
@@ -134,27 +166,43 @@ const client = ({ address, size: [w, h], workspace: { id, name }, class: c, titl
             menu.popup_at_pointer(null); // Show the menu at the pointer's position
         },
         child: Widget.Box({
-            vertical: true,
-            children: [
-                Widget.Icon({
-                    css: `
-                        min-width: ${Math.max(w * OVERVIEW_SCALE - 4, 1)}px;
-                        min-height: ${Math.max(h * OVERVIEW_SCALE - 4, 1)}px;
-                    `,
-                    icon: substitute(c),
-                    size: Math.min(w, h) * OVERVIEW_SCALE / 2.5,
-                }),
-                Widget.Scrollable({
-                    hexpand: true,
-                    vexpand: true,
-                    child: Widget.Label({
-                        css: `
-                font-size: ${Math.min(w, h) * OVERVIEW_SCALE / 20}px;
-                `,
-                        label: title,
+            css: `
+                min-width: ${Math.max(w * OVERVIEW_SCALE - 4, 1)}px;
+                min-height: ${Math.max(h * OVERVIEW_SCALE - 4, 1)}px;
+            `,
+            homogeneous: true,
+            child: Widget.Box({
+                vertical: true,
+                vpack: 'center',
+                className: 'spacing-v-5',
+                children: [
+                    Widget.Icon({
+                        icon: substitute(c),
+                        size: Math.min(w, h) * OVERVIEW_SCALE / 2.5,
+                    }),
+                    // TODO: Add xwayland tag instead of just having italics
+                    DoubleRevealer({
+                        transition1: 'slide_right',
+                        transition2: 'slide_down',
+                        revealChild: revealInfoCondition,
+                        child: Widget.Scrollable({
+                            hexpand: true,
+                            vscroll: 'never',
+                            hscroll: 'automatic',
+                            child: Widget.Label({
+                                truncate: 'end',
+                                className: `${xwayland ? 'txt txt-italic' : 'txt'}`,
+                                css: `
+                                    font-size: ${Math.min(SCREEN_WIDTH, SCREEN_HEIGHT) * OVERVIEW_SCALE / 14.6}px;
+                                    margin: 0px ${Math.min(SCREEN_WIDTH, SCREEN_HEIGHT) * OVERVIEW_SCALE / 10}px;
+                                `,
+                                // If the title is too short, include the class
+                                label: (title.length < 5 ? `${c}: ${title}` : title),
+                            })
+                        })
                     })
-                })
-            ]
+                ]
+            })
         }),
         tooltipText: `${c}: ${title}`,
         setup: (button) => {
